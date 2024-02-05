@@ -1,28 +1,4 @@
-(
-    (number) var
-    2 (i) var
-    true (flag) var
-    
-    (   (false (flag) var)
-        (true (flag) var)
-        number 2 less if
-    ) (
-        (false (flag) var) 
-        (
-            (
-                ( 
-                    false (flag) var
-                ) ()
-                number i mod 0 equal if
-
-                i 1 add (i) var
-            )
-            (i number 0.5 pow 1 add less flag and) while
-        ) number 2 mod 0 equal number 3 mod 0 equal or if
-    ) number 4 less if
-    flag
-)
-(prime?) var
+(library\math.stk) read-file eval
 
 (素数判定プログラム) print
 (
