@@ -1,22 +1,4 @@
-(
-    (defolt) var
-    (patern) var
-    (value) var
-    
-    defolt (return) var
-    patern (,) split (token) (
-        token (=>) split (token) var
-        (token 1 get eval (return) var)
-        () value token 0 get eval find if
-    ) for
-    
-    (token) free
-    (patern) free
-    (defolt) free
-
-    return eval
-) 
-(match) var
+(library\macro.stk) read-file eval
 
 [
     5.6 true (hello)
