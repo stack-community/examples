@@ -1,0 +1,38 @@
+(
+    (defolt) var
+    (patern) var
+    (value) var
+    
+    defolt (return) var
+    patern (,) split (token) (
+        token (=>) split (token) var
+        (token 1 get eval (return) var)
+        () value token 0 get eval find if
+    ) for
+    
+    (token) free
+    (patern) free
+    (defolt) free
+
+    return eval
+) 
+(match) var
+
+(
+    (member) var
+    (name) var
+
+    name eval (name) var
+    
+    member (,) split (token) (
+        token (:) split
+    ) map (member) var    
+
+    (<Object ) name concat (>) concat name var
+    
+    member (i) (
+        i 1 get eval
+        name (.) concat i 0 get eval concat
+        var
+    ) for
+) (object) var
