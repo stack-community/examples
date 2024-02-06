@@ -1,11 +1,3 @@
-(
-    (-) 61 repeat print
-    sheet (i) (
-        (|  ) i (  |  ) join concat (  |) concat print
-        (-) 61 repeat print
-    ) for
-) (show) var
-
 [
     [0 0 0 0 0 0 0 0 0 0]
     [0 0 0 0 0 0 0 0 0 0]
@@ -27,7 +19,11 @@
        (that's value is ) sheet row get col get concat print
     ) (
         (
-            show eval
+            (-) 61 repeat print
+            sheet (i) (
+                (|  ) i (  |  ) join concat (  |) concat print
+                (-) 61 repeat print
+            ) for
         ) (
             (
                 (Row: ) input (row) var
