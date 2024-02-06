@@ -14,19 +14,30 @@
     (array) var
     array (i) (
         i total add (total) var
-    ) for
-    total
+    ) for total
     (array) free
-    (i) free
     (total) free
+    (i) free
 ) (sum) var
 
 ( #リストの平均を求める#
-    (array) var
-    array sum eval 
-    array len div
-    (array) free
+    (array2) var
+    array2 sum eval 
+    array2 len div
+    (array2) free
 ) (average) var
+
+( #リストの最大値を求める#
+    (array) var
+    array 0 get (temp) var
+    array (i) (
+        (i (temp) var) ()
+        temp i less if
+    ) for temp
+    (array) free
+    (temp) free
+    (i) free
+) (max) var
 
 (　#素数か判定する#
     (number) var
