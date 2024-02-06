@@ -1,8 +1,9 @@
 ( (who) var (text) var 
     (https://api.tts.quest/v3/voicevox/synthesis?text=)
     text concat (&speaker=) who concat concat
-    request (,) split 5 get (":") split 1 get (\) () replace 
-    (") () replace open
+    request 50 sleep
+    (,) split 5 get (":") split 1 get 
+    (\) () replace (") () replace open
 ) (speak) var
 
 (読み上げアプリ) print (
