@@ -42,8 +42,8 @@
                     0 exit
                 ) (
                     prompt eval print
-                ) prompt (exit) find if
-            ) prompt (set) find if
-        ) prompt (show) find if
-    ) prompt (get) find if
+                ) prompt (exit) equal if
+            ) prompt (set) equal if
+        ) prompt (show) equal if
+    ) prompt (get) equal if
 ) (true) while
