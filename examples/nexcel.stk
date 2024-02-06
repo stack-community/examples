@@ -1,0 +1,49 @@
+(
+    (-) 61 repeat print
+    sheet (i) (
+        (|  ) i (  |  ) join concat (  |) concat print
+        (-) 61 repeat print
+    ) for
+) (show) var
+
+[
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+] (sheet) var
+
+(Nexcel 2024) print (
+    (> ) input (prompt) var
+    (
+       (Row: ) input (row) var
+       (Col: ) input (col) var
+       (that's value is ) sheet row get col get concat print
+    ) (
+        (
+            show eval
+        ) (
+            (
+                (Row: ) input (row) var
+                (Col: ) input (col) var
+                (Value: ) input eval (val) var
+                
+                sheet row 
+                    sheet row get col val set 
+                set  (sheet) var
+            ) (
+                (
+                    0 exit
+                ) (
+                    prompt eval print
+                ) prompt (exit) find if
+            ) prompt (set) find if
+        ) prompt (show) find if
+    ) prompt (get) find if
+) (true) while
