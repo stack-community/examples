@@ -2,18 +2,18 @@
 
 (素数判定プログラム) print
 (
-    (> ) input (number) var
+    (> ) input (target) var
     
     (
         (終了します) print 
         0 exit
     ) (
         now-time (start) var
-        ( number (は素数です（処理時間) concat time concat (秒）)　concat print )    
-        ( number (は素数ではありません（処理時間)  concat time concat (秒）) concat print )
-        number prime? eval
+        ( target (は素数です（処理時間) concat time concat (秒）)　concat print )    
+        ( target (は素数ではありません（処理時間)  concat time concat (秒）) concat print )
+        target prime? eval
         now-time start sub (time) var
         if    
     )
-    number (exit) find if
+    target (exit) find if
 ) (true) while
