@@ -1,4 +1,12 @@
-(https://api.tts.quest/v3/voicevox/synthesis?text=)
-(文章を入力してください> ) input concat request
-(,) split 5 get (":") split 1 get (\) () replace 
-(") () replace open
+( (who) var (text) var 
+    (https://api.tts.quest/v3/voicevox/synthesis?text=)
+    text concat (&speaker=) who concat concat
+    request (,) split 5 get (":") split 1 get (\) () replace 
+    (") () replace open
+) (speak) var
+
+(読み上げアプリ) print (
+    (文章を入力してください> ) input 
+    (スピーカIDを入力してください> ) input 
+    speak eval
+) (true) while
