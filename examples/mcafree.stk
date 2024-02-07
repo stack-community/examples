@@ -1,4 +1,4 @@
-(Stackスクリプトセキュリティ) print
+(McAfree) print
 (スキャンするファイル名を入力してください> ) 
 input (name) var name read-file (code) var
 
