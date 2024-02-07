@@ -14,8 +14,8 @@
 (Nexcel 2024) print (
     (> ) input (prompt) var
     (
-       (Row: ) input (row) var
-       (Col: ) input (col) var
+       (Row: ) input eval (row) var
+       (Col: ) input eval (col) var
        (that's value is ) sheet row get col get concat print
     ) (
         (
@@ -26,8 +26,8 @@
             ) for
         ) (
             (
-                (Row: ) input (row) var
-                (Col: ) input (col) var
+                (Row: ) input eval (row) var
+                (Col: ) input eval (col) var
                 (Value: ) input eval (val) var
                 
                 sheet row 
@@ -38,7 +38,7 @@
                     0 exit
                 ) (
                     (
-                        (File: ) input
+                        (File: ) input eval
                         read-file eval
                         (sheet) var
                     ) (
@@ -48,11 +48,12 @@
                             write-file
                         ) (
                             (
-                                (Row: ) input (row) var
-                                (Col: ) input (col) var
+                                (Row: ) input eval (row) var
+                                (Col: ) input eval (col) var
+                                (Design: ) input  eval (design) var
                                 (Data Graph) print
                                 sheet row get col get (i) (
-                                    (| ) (=) i repeat concat print
+                                    (| ) design i repeat concat print
                                 ) for    
                             ) (
                                 prompt eval print
