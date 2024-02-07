@@ -1,0 +1,10 @@
+(Ghrome インターネットブラウザ) print　print
+(Webサイトをローカル環境にダウンロードして表示するので、) print
+(ネットワーク接続する時間を減らしセキュリティ危機を抑えられます。) print
+
+(
+    ([URL]> ) input (url) var
+    url request
+    (WebSite.html) write-file 
+    (WebSite.html) open
+) (true) while
