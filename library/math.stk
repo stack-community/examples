@@ -27,6 +27,13 @@
     (array2) free
 ) (average) var
 
+( #累計を求める#
+    (max) var (count) var
+       (count count 1 add max sum eval add)
+       (count)
+       count max less if
+) (cumulate) var
+
 ( #リストの最大値を求める#
     (array) var
     array 0 get (temp) var
