@@ -29,7 +29,7 @@
 
 ( #累計を求める#
     (max) var (count) var
-       (count count 1 add max cumulate eval add)
+       (count copy 1 add max cumulate eval add)
        (count)
        count max less if
 ) (cumulate) var
