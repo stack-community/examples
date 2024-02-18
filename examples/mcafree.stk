@@ -6,4 +6,4 @@ input (name) var name read-file (code) var
     (ファイルが破壊される可能性がある危険なコードを発見しました) print
     name rm
 ) (このスクリプトは安全です print)
-code (rm|mkdir) regex if
+code (rm) regex if
