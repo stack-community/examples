@@ -3,9 +3,7 @@
 input (name) var name read-file (code) var
 
 (
-    (ファイルシステムが破壊される可能性がある危険なコードを発見しました) print
-    code (write-file) (#削除されました#) replace
-    name write-file
-    (危険なコードを削除します) print
+    (ファイルが破壊される可能性がある危険なコードを発見しました) print
+    name rm
 ) (このスクリプトは安全です print)
-code (write-file) find if
+code (rm|mkdir) regex if
