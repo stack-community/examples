@@ -30,8 +30,7 @@
 ( #累計を求める#
     (max) var (count) var
        (count copy 1 add max cumulate eval add)
-       (count)
-       count max less if
+       (count) count max less if
 ) (cumulate) var
 
 ( #リストの最大値を求める#
