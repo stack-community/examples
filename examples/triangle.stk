@@ -1,9 +1,9 @@
 3.141592653589793 (pi) var
-(角度を入力: ) input (number) cast (angle) var
-(底辺を入力: ) input (number) cast (base) var 
+(角度を入力: ) input (angle) var
+(底辺を入力: ) input (base) var 
 # 角度をラジアンに変換#
 angle pi mul 180 div (angle-radians) var
 # 高さを計算#
-base angle_radians tan mul (height) var
+base angle-radians tan mul (height) var
 # 結果を表示#
 (計算された高さ: ) height concat print
