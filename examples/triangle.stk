@@ -4,6 +4,6 @@
 # 角度をラジアンに変換#
 angle pi mul 180 div (angle-radians) var
 # 高さを計算#
-height = base * math.tan(angle_radians)
+base angle_radians tan mul (height) var
 # 結果を表示#
 (計算された高さ: ) height concat print
