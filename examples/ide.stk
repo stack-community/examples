@@ -14,7 +14,7 @@ true (flag) var
         ) (in) while
 
 
-        (関数名はを入力してください) print
+        (関数名を入力してください) print
         ((d) (c) var) (c) (>>> ) input replace (d) code replace 
         (関数が出来ました) print copy copy print eval (code) var  
 
@@ -29,6 +29,7 @@ true (flag) var
                 in code ( ) concat swap concat (code) var
             ) (in) while
         ) (
+            code print
            (保存するファイル名を入力してください) print
            (>>> ) input code swap write-file
            false (flag) var
