@@ -1,3 +1,8 @@
+(..\library) cd
+ls (i) (
+    i read-file eval
+) for
+
 (Stackプログラミング言語) print (
     () (prog) var (##) (in) var (
         (> ) input (in) var
