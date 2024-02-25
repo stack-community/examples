@@ -1,0 +1,27 @@
+#数学ライブラリを読み込む#
+..\library\math.stk read-file eval
+
+( #数値を分解する#
+    (num) var
+    1 num 1 range rand (r) var
+    [r num r sub] 
+) (split-number) var
+
+#計算する数値#
+57 (number1) var
+23 (number2) var
+
+#数値を分解する#
+number1 split-number eval (number1) var
+number2 split-number eval (number2) var
+
+#分解された数値を箱に入れる#
+[number1 0 get number2 0 get] (box1) var
+[number1 1 get number2 1 get] (box2) var
+
+#箱ごとの和を求める#
+box1 sum eval (box1) var
+box2 sum eval (box2) var
+
+#最終的な和を求める#
+box1 box2 add print 
