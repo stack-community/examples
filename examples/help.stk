@@ -22,6 +22,6 @@
             open
         ) (
             (問題の解決をお祈りしています) print 
-        ) ask (はい|yes|YES|Yes|うん|そう) regex if () print
-    ) () ask (表示|文|ログ) regex ask (おかしい|変|化け) regex and not ask (解決|完|大丈夫)　regex not and if
+        ) ask (はい|うん|そう|そー|yes|YES|Yes) regex if () print
+    ) () ask (表示|文|ログ) regex ask (おかしい|変|化け) regex and not ask (解決|完|できた|出来た|大丈夫)　regex not and if
 ) true while
