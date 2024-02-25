@@ -5,8 +5,16 @@
 
     (
         (A. スクリプトファイルのエンコードをUTF-8にしてください) print
-        (   Stackプログラミング言語は基本的にUTF-8で処理しています) print () print
-    ) (
+        (   Stackプログラミング言語は基本的にUTF-8で文字列を処理しています) print () print
+    ) () ask (表示|文|ログ) regex ask (おかしい|変|化け) regex and if
+
+    (
+        (それは良かったですね！)　print
+        (引き続きStackプログラミング言語をお楽しみください！) print 
+        0 exit
+    )　() ask (解決|完|できた|出来た|大丈夫)　regex if
+
+    (
         (解決策が分かりません) print (Stackプログラミング言語コミュニティに質問しますか？) print () print
         (> ) input (ask) var () print
 
@@ -16,6 +24,5 @@
         ) (
             (問題の解決をお祈りしています) print 
         ) ask (はい|yes|YES|Yes|うん|そう) regex if () print
-
-    ) ask (表示|文|ログ) regex ask (おかしい|変|化け) regex and if
+    ) () ask (表示|文|ログ) regex ask (おかしい|変|化け) regex and not ask (解決|完|大丈夫)　regex not and if
 ) true while
