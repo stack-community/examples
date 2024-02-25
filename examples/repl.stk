@@ -1,0 +1,7 @@
+(Stackプログラミング言語) print (
+    () (prog) var (##) (in) var (
+        (> ) input (in) var
+        prog in ( ) concat concat (prog) var
+    ) (in () equal not) while 
+    prog eval print
+) true while
