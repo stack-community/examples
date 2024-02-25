@@ -1,0 +1,21 @@
+    (Stackプログラミング言語 ヘルプ) print
+    (何かお困りですか?) print () print
+(
+    (> ) input (ask) var () print
+
+    (
+        (A. スクリプトファイルのエンコードをUTF-8にしてください) print
+        (   Stackプログラミング言語は基本的にUTF-8で処理しています) print () print
+    ) (
+        (解決策が分かりません) print (Stackプログラミング言語コミュニティに質問しますか？) print () print
+        (> ) input (ask) var () print
+
+        (
+            (https://github.com/orgs/Stack-Programing-Community/discussions/new?category=q-a)
+            open
+        ) (
+            (問題の解決をお祈りしています) print 
+        ) ask (はい|yes|YES|Yes|うん|そう) regex if () print
+
+    ) ask (表示|文|ログ) regex ask (おかしい|変|化け) regex and if
+) true while
