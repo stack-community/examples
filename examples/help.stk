@@ -1,6 +1,5 @@
-    (Stackプログラミング言語 ヘルプ) print
-    (何かお困りですか?) print () print
-(
+(Stackプログラミング言語 ヘルプ) print
+(何かお困りですか?) print () print　(
     (> ) input (ask) var () print
 
     (
