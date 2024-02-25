@@ -1,4 +1,4 @@
-(library\math.stk) read-file eval
+(..\library\math.stk) read-file eval
 
 (素数判定プログラム) print
 (
