@@ -3,6 +3,8 @@
         (Fizz) (
             (Buzz) i
             i 5 mod 0 equal if 
-        ) i 3 mod 0 equal if
-    ) i 15 mod 0 equal if
+        ) 
+        i 3 mod 0 equal if
+    ) 
+    i 15 mod 0 equal if
 ) map ( ) join print
