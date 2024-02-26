@@ -1,9 +1,13 @@
-3.141592653589793 (pi) var
+..\library\math.stk read-file eval
+
 (角度を入力: ) input (angle) var
 (底辺を入力: ) input (base) var 
+
 # 角度をラジアンに変換#
-angle pi mul 180 div (angle-radians) var
+angle radian eval (angle-radians) var
+
 # 高さを計算#
 base angle-radians tan mul (height) var
+
 # 結果を表示#
-(計算された高さ: ) height concat print
+(計算された高さ: ) height round concat print
