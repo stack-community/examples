@@ -1,0 +1,69 @@
+..\library\math.stk read-file eval
+
+[
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+    [0 0 0 0 0 0 0 0 0 0]
+] (sheet) var
+
+(Sheet - 表計算ソフトウェア) print (
+    (> ) input (prompt) var
+    (
+       (行: ) input eval (row) var
+       (列: ) input eval (col) var
+       (そのセルの値は) sheet row get col get concat print
+    ) (
+        (
+            (-) 61 repeat print
+            sheet (i) (
+                (|  ) i (  |  ) join concat (  |) concat print
+                (-) 61 repeat print
+            ) for
+        ) (
+            (
+                (行: ) input eval (row) var
+                (列: ) input eval (col) var
+                (データ: ) input eval (val) var
+                
+                sheet row 
+                    sheet row get col val set 
+                set  (sheet) var
+            ) (
+                (
+                    0 exit
+                ) (
+                    (
+                        (ファイル名: ) input eval
+                        read-file eval
+                        (sheet) var
+                    ) (
+                        (
+                            sheet
+                            (ファイル名: ) input
+                            write-file
+                        ) (
+                            (
+                                (行: ) input eval (row) var
+                                (列: ) input eval (col) var
+                                (Design: ) input  eval (design) var
+                                (Data Graph) print
+                                sheet row get col get (i) (
+                                    (| ) design i repeat concat print
+                                ) for    
+                            ) (
+                                prompt eval print
+                            ) prompt (graph) equal if
+                        ) prompt (save) equal if
+                    ) prompt (open) equal if
+                ) prompt (exit) equal if
+            ) prompt (set) equal if
+        ) prompt (show) equal if
+    ) prompt (get) equal if
+) (true) while
