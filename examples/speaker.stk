@@ -5,7 +5,7 @@
     (\) () replace (") () replace open
 ) (speak) var
 
-(Voice Fox) print (
+(音声読み上げアプリ) print (
     (文章を入力してください> ) input 
     (スピーカIDを入力してください> ) input 
     speak eval
