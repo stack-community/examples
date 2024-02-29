@@ -1,3 +1,2 @@
-# Stackプログラミング言語のサンプルプログラム集
-
-これはStackプログラミング言語を実用的な言語にする為、サンプルプログラムを開発するプロジェクトです。
+# Example Programs
+This is a project to develop sample programs to make the Stack programming language a practical language.
