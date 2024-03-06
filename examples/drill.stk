@@ -1,12 +1,28 @@
-(掛け算ドリル) print
+[
+    261.63
+    293.66
+    329.63
+    349.23
+    392.00
+    440.00
+    493.88
+    523.25
+]
+
+(Multiplation Drills) print
 0 (score) var
 1 11 1 range (i) (
     0 10 1 range rand (num1) var
     0 10 1 range rand (num2) var
 
-    ( score 10 add (score) var (正解！おめでとうございます))
-    ((残念。正解は) num1 num2 mul concat (でした) concat)
-    i (問目: ) concat num1 concat ( x ) concat num2 concat ( = ) concat
-    input num1 num2 mul equal if print
+    ( 
+        score 10 add (score) var (Correct! ) print
+        493.25 1 play-sound  
+    ) (
+        (No. true answer is ) num1 num2 mul concat print 
+        261.63 1 play-sound
+    )
+    (Question) i (: ) concat concat num1 concat ( x ) concat num2 concat ( = ) concat
+    input num1 num2 mul equal if 
 ) for 
-(結果: ) score concat (.pts) concat print
+(Result: ) score concat (.pts) concat print
