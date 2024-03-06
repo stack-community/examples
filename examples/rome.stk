@@ -1,26 +1,25 @@
 (
-    [
-        261.63
-        293.66
-        329.63
-        349.23
-        392.00
-        440.00
-        493.88
-        523.25
-    ] (scale) var
-    
+
+    ..\library\music.stk read-file eval
+
     (
         [
-        scale 0 get
-            scale 4 get
-            scale 1 get
-            scale 2 get
-            scale 3 get
-            scale 1 get
-            scale 2 get
-            scale 3 get
-        ] (i) (i 0.5 play-sound) for
+            [E4 0.5]
+            [E4 0.5]
+            [C4 0.3]
+            [D4 0.3]
+            [E4 0.3]
+            [D4 0.5]
+            [G4 0.7]
+            [E4 0.4]
+            [D4 0.3]
+            [C4 0.3]
+            [A3 0.3]
+            [B3 0.4]
+            [C4 0.4]
+            [D4 0.3]
+            
+        ] (i) (i 0 get i 1 get play-sound) for
     ) true while
 
 ) thread
@@ -120,7 +119,7 @@
 
             (敗北・・・。賠償金) enemy 2 mul (damage) var damage concat (デナリウス払う) concat print
             economic damage sub (economic) var
-            (市民の士気レベルが) reward concat (ダウン) concat print
+            (市民の士気レベルが) damage concat (ダウン) concat print
             morale damage sub (morale) var    
         ) (
             (元老院は和平の決議をし、ローマは敵と和平を結んだ) print
