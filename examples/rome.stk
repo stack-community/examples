@@ -1,3 +1,25 @@
+(
+    [
+        261.63
+        293.66
+        329.63
+        349.23
+        392.00
+        440.00
+        493.88
+        523.25
+    ] (scale) var
+
+    [
+        scale 0 get
+        scale 4 get
+        scale 3 get
+        scale 2 get
+        scale 1 get
+    ] (i) (i 0.7 play-sound) for
+
+) thread
+
   0     (army) var
 100 (economic) var
   0     (city) var
