@@ -6,10 +6,10 @@
 
     ( 
         score 10 add (score) var (Correct! ) print
-        493.25 1 play-sound  
+        (493.25 1 play-sound) thread  
     ) (
         (No. true answer is ) num1 num2 mul concat print 
-        261.63 1 play-sound
+        (261.63 1 play-sound) thread
     )
     (Question) i (: ) concat concat num1 concat ( x ) concat num2 concat ( = ) concat
     input num1 num2 mul equal if 
