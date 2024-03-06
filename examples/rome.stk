@@ -9,14 +9,19 @@
         493.88
         523.25
     ] (scale) var
-
-    [
+    
+    (
+        [
         scale 0 get
-        scale 4 get
-        scale 3 get
-        scale 2 get
-        scale 1 get
-    ] (i) (i 0.7 play-sound) for
+            scale 4 get
+            scale 1 get
+            scale 2 get
+            scale 3 get
+            scale 1 get
+            scale 2 get
+            scale 3 get
+        ] (i) (i 0.5 play-sound) for
+    ) true while
 
 ) thread
 
@@ -61,7 +66,7 @@
             (
                 (演説にいくら使う？) input speech eval
             ) (
-                (元老院 { そんなインペリアルないですよ) print
+                (元老院 { そんなインペリウムないですよ) print
             ) select (c|C) regex if
         ) select (b|B) regex if
     ) select (a|A) regex if
