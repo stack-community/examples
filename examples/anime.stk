@@ -7,6 +7,6 @@
     anime.txt read-file (split) split (i) (
         1 800 1 range (_) (() print) for
     　　i print
-        .7 sleep
+        .3 sleep
     ) for
 ) true while
