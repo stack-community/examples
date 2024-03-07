@@ -1,0 +1,16 @@
+( 
+    (.) () replace (text) var
+    text ( ) split (token) var
+    
+    token 0 get             (subject) var
+    token copy len 1 sub get (object) var
+    
+    token 0 del              (token) var
+    token copy len 1 sub del (token) var
+
+    [object token ( ) join subject] ( ) join 
+    (In Soviet Russia, ) swap concat ( !!!) concat
+
+) (soviet) var
+
+(> ) input soviet eval print
