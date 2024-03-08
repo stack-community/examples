@@ -4,6 +4,5 @@ input (name) var name read-file (code) var
 
 (
     (Found unsafe code can break fike system.) print
-    name rm
 ) ((This script is safety.) print)
 code (rm) regex if
