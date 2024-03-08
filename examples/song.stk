@@ -1,3 +1,18 @@
+(
+    
+    (..\library\music.stk) read-file eval 
+
+    [
+        [C4 1 add 0.3] [C4 1 add 0.3] [G4 1 add 0.4] [G4 1 add 0.4]
+        [A4 1 add 0.3] [A4 1 add 0.3] [G4 1 add 0.4] [G4 1 add 0.4]
+        [F4 1 add 0.3] [F4 1 add 0.3] [E4 1 add 0.4] [E4 1 add 0.4]
+        [D4 1 add 0.3] [D4 1 add 0.3] [C4 1 add 0.4] [C4 1 add 0.4]
+    ] (i) (
+        i 0 get i 1 get play-sound
+    ) for
+
+) thread
+
 (..\library\music.stk) read-file eval 
 
 [
