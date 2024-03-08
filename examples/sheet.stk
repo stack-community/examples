@@ -13,12 +13,12 @@
     [0 0 0 0 0 0 0 0 0 0]
 ] (sheet) var
 
-(Sheet - 表計算ソフトウェア) print (
+(Sheet) print (
     (> ) input (prompt) var
     (
-       (行: ) input eval (row) var
-       (列: ) input eval (col) var
-       (そのセルの値は) sheet row get col get concat print
+       (Row: ) input eval (row) var
+       (Col: ) input eval (col) var
+       (Value: ) sheet row get col get concat print
     ) (
         (
             (-) 61 repeat print
@@ -28,9 +28,9 @@
             ) for
         ) (
             (
-                (行: ) input eval (row) var
-                (列: ) input eval (col) var
-                (データ: ) input eval (val) var
+                (Row: ) input eval (row) var
+                (Col: ) input eval (col) var
+                (Data: ) input eval (val) var
                 
                 sheet row 
                     sheet row get col val set 
@@ -40,18 +40,18 @@
                     0 exit
                 ) (
                     (
-                        (ファイル名: ) input eval
+                        (File path: ) input eval
                         read-file eval
                         (sheet) var
                     ) (
                         (
                             sheet
-                            (ファイル名: ) input
+                            (File path: ) input
                             write-file
                         ) (
                             (
-                                (行: ) input eval (row) var
-                                (列: ) input eval (col) var
+                                (Row: ) input eval (row) var
+                                (Col: ) input eval (col) var
                                 (Design: ) input  eval (design) var
                                 (Data Graph) print
                                 sheet row get col get (i) (
