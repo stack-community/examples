@@ -1,9 +1,9 @@
-(Stack　スクリプトセキュリティ) print
-(スキャンするファイル名を入力してください> ) 
+(Stack Script Security) print
+(Enter file path you want to scan> ) 
 input (name) var name read-file (code) var
 
 (
-    (ファイルが破壊される可能性がある危険なコードを発見しました) print
+    (Found unsafe code can break fike system.) print
     name rm
-) (このスクリプトは安全です print)
+) ((This script is safety.) print)
 code (rm) regex if
