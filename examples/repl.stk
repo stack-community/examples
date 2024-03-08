@@ -3,7 +3,7 @@ ls (i) (
     i read-file eval
 ) for
 
-(Stackプログラミング言語) print (
+(Stack Programming Language REPL) print (
     () (prog) var (##) (in) var (
         (> ) input (in) var
         prog in ( ) concat concat (prog) var
