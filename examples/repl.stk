@@ -8,5 +8,5 @@ ls (i) (
         (> ) input (in) var
         prog in ( ) concat concat (prog) var
     ) (in () equal not) while 
-    prog eval print
+    prog eval copy print
 ) true while
