@@ -1,16 +1,16 @@
 (..\library\math.stk) read-file eval
 
-(素数判定プログラム) print
+(Prime number judgement program) print
 (
     (> ) input (target) var
     
     (
-        (終了します) print 
+        (exiting...) print 
         0 exit
     ) (
         now-time (start) var
-        ( target (は素数です（処理時間) concat time concat (秒）)　concat print )    
-        ( target (は素数ではありません（処理時間)  concat time concat (秒）) concat print )
+        ( target ( is a prime number（time: ) concat time concat ( second）)　concat print )    
+        ( target ( is not a prime number（time: )  concat time concat ( secound）) concat print )
         target prime? eval
         now-time start sub (time) var
         if    
