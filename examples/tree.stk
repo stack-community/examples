@@ -12,4 +12,5 @@
     ) for
 ) tree var
 
+args-cmd 2 get copy print cd
 1 tree eval
