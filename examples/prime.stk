@@ -1,6 +1,6 @@
 (..\library\math.stk) read-file eval
 
-(Prime number judgement program) print
+(Prime number judgement program) print 
 (
     (> ) input (target) var
     
@@ -8,12 +8,15 @@
         (exiting...) print 
         0 exit
     ) (
-        now-time (start) var
-        ( target ( is a prime number（time: ) concat time concat ( second）)　concat print )    
-        ( target ( is not a prime number（time: )  concat time concat ( secound）) concat print )
-        target prime? eval
-        now-time start sub (time) var
-        if    
+        now-time (start) var ( 
+            target ( is a prime number（time: ) concat time concat ( second）)
+            concat print 
+        ) (
+            target ( is not a prime number（time: )  concat time concat ( secound）)
+            concat print
+        )
+        target prime? eval now-time start sub (time) var if    
     )
-    target (exit) find if
-) (true) while
+     target (exit) regex if
+) 
+(true) while
