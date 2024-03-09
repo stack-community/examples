@@ -5,8 +5,8 @@
     (\) () replace (") () replace open
 ) (speak) var
 
-(音声読み上げアプリ) print (
-    (文章を入力してください> ) input 
-    (スピーカIDを入力してください> ) input 
+(Text to speak apps) print (
+    (Please enter the text > ) input 
+    (Please enter speaker id > ) input 
     speak eval
 ) (true) while
