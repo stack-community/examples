@@ -1,9 +1,9 @@
 (
-    (defolt) var
+    (default) var
     (patern) var
     (value) var
     
-    defolt (return) var
+    default (return) var
     patern (,) split (token) (
         token (=>) split (token) var
         (token 1 get eval (return) var)
@@ -12,7 +12,7 @@
     
     (token) free
     (patern) free
-    (defolt) free
+    (default) free
 
     return eval
 ) 
