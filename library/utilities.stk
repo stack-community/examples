@@ -1,4 +1,4 @@
-( #Google検索#
+( #Google search#
     (https://www.google.com/search?q=)
     swap concat open
 ) (google) var
