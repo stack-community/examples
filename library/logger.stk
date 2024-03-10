@@ -1,11 +1,11 @@
-#--------------------+
-| Stackプログラミング言語 |
-| ログ表示ライブラリ      |
-+--------------------#
+#
+    Stack programming language
+    log output library
+#
 
 [] (log-list) var
 
-( #情報ログを出力#
+( #output information log#
     (msg) var
     ([INFO] msg)
     (msg) msg replace
@@ -15,7 +15,7 @@
     (msg) free
 ) (log-info) var
 
-( #警告ログを出力#
+( #output warning log#
     (msg) var
     ([!WARNING!] msg)
     (msg) msg replace
