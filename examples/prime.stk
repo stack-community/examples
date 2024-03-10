@@ -17,6 +17,6 @@
         )
         target prime? eval now-time start sub (time) var if    
     )
-     target (exit) regex if
+    target (exit) regex if
 ) 
 (true) while
