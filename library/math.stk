@@ -1,19 +1,19 @@
 #   
-    Stackプログラミング言語
-    数学標準ライブラリ
+    Stack programming language
+    mathematics standards library
 #
 
-#円周率#
+#pi#
 3.141592653589793 (pi) var
 
-( #絶対値を求める#
+( #solve abs#
     (num) var
     num (-) () replace
     (number) cast
     (num) free 
 ) (abs) var
 
-( #リストの合計を求める#
+( #solve sum of list#
     (array) var
     array (i) (
         i total add (total) var
@@ -24,24 +24,24 @@
 ) (sum) var
 
 
-( #角度からラディアンを求める#
+( #solve radian form angle#
     pi mul 180 div 
 )　(radian) var
 
-( #リストの平均を求める#
+( #solve average of list#
     (array2) var
     array2 sum eval 
     array2 len div
     (array2) free
 ) (average) var
 
-( #累計を求める#
+( #solve cumulate#
     (max) var (count) var
        (count copy 1 add max cumulate eval add)
        (count) count max less if
 ) (cumulate) var
 
-( #リストの最大値を求める#
+( #solve max in list#
     (array) var
     array 0 get (temp) var
     array (i) (
@@ -53,7 +53,7 @@
     (i) free
 ) (max) var
 
-(　#素数か判定する#
+(　#judgement is it prime number#
     (number) var
     2 (i) var
     true (flag) var
