@@ -1,6 +1,6 @@
+(..\library\music.stk) read-file eval 
+
 (
-    
-    (..\library\music.stk) read-file eval 
 
     [
         [C4 1 add 0.3] [C4 1 add 0.3] [G4 1 add 0.4] [G4 1 add 0.4]
@@ -12,8 +12,6 @@
     ) for
 
 ) thread
-
-(..\library\music.stk) read-file eval 
 
 [
     [C4 0.3] [C4 0.3] [G4 0.4] [G4 0.4]
