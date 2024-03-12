@@ -1,7 +1,7 @@
 ..\library\math.stk read-file eval
 
-(角度を入力: ) input (angle) var
-(底辺を入力: ) input (base) var 
+(Enter the angle: ) input (angle) var
+(Enter the base : ) input (base) var 
 
 # 角度をラジアンに変換#
 angle radian eval (angle-radians) var
@@ -10,4 +10,4 @@ angle radian eval (angle-radians) var
 base angle-radians tan mul (height) var
 
 # 結果を表示#
-(計算された高さ: ) height round concat print
+(Height: ) height round concat print
