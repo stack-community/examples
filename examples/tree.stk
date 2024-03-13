@@ -1,4 +1,5 @@
-( (indent) var
+( # View tree of file structure recursively #
+    (indent) var
     ls sort (i) (
         (
             (|  ) indent 1 sub repeat (+-- ) i concat concat print
