@@ -11,6 +11,6 @@
         ) i folder if
     ) for
 ) tree var
-
-args-cmd 2 get copy print cd
+((Error! directory path is wrong.) print 0 exit) ()
+args-cmd 2 get copy print cd (error:cd) equal if
 1 tree eval
