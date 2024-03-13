@@ -1,0 +1,9 @@
+(
+    (([insider data of the file]) print data print)
+    ((Please again.) print view eval)
+    (Enter open file > ) input 
+    read-file (data) var 
+    data (error:read-file) equal not if
+) (view) var
+
+view eval
