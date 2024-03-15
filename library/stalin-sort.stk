@@ -1,0 +1,19 @@
+( # Sort algorithm of the great comrade Stalin #
+
+    (list) var
+    list 0 get 1 sub (norm) var
+    [] (purged) var [] (siberia) var
+
+    list (i) (
+        (
+            purged i append (purged) var
+            i 1 sub (norm) var
+        ) (
+            siberia i append (siberia) var
+        )
+        norm i less if
+    ) for
+
+    purged
+
+) (stalin-sort) var
