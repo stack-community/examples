@@ -1,4 +1,4 @@
-( #Google search#
-    (https://www.google.com/search?q=)
-    swap concat open
-) (google) var
+( # Search in the web #
+    (https://www.{}.com/search?q=) swap ({}) swap replace
+    swap concat open pop
+) (search) var
