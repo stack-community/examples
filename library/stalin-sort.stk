@@ -1,19 +1,23 @@
 ( # Sort algorithm of the great comrade Stalin #
 
-    (list) var
-    list 0 get 1 sub (norm) var
-    [] (purged) var [] (siberia) var
+    (people) var
+    people 0 get 1 sub (norm) var
+    [] (soviet-union) var [] (siberia) var
 
-    list (i) (
+    # Start the purge #
+    people (i) (
         (
-            purged i append (purged) var
+            # ↓ They are good friend of the people #
+            soviet-union i append (soviet-union) var
             i 1 sub (norm) var
         ) (
+            # ↓ They guys are enemy of the people #
             siberia i append (siberia) var
         )
         norm i less if
     ) for
 
-    purged
+    # Enemy of the people is gone #
+    soviet-union
 
 ) (stalin-sort) var
