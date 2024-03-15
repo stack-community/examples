@@ -1,10 +1,4 @@
-( 
-    (who) var (text) var 
-    (https://api.tts.quest/v3/voicevox/synthesis?text=)
-    text concat (&speaker=) who concat concat request
-    5 sleep (,) split 5 get (":") split 1 get 
-    (\) () replace (") () replace open
-) (speak) var
+(..\library\utilities.stk) read-file eval
 
 (Text to speak apps) print (
     (Please enter the text > ) input 
