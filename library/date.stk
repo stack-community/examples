@@ -1,0 +1,32 @@
+[
+	(date) 
+	(year)
+	(month)
+	(day)	
+] (date) var
+
+[
+	[(show) (
+		[
+			self year property
+			self month property
+			self day property
+		] (/ ) join
+	)]
+
+	[(tomorrow) (
+		self day self day property 1 add modify
+	)]
+] (impl) var
+
+# 
+Exmaple
+```
+date impl
+[2024 3 18]
+instance (date) var
+date show method print
+date tomorrow method (date) var 
+date show method print 
+```
+#
