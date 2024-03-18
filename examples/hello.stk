@@ -1,0 +1,23 @@
+[
+    (hello)
+    (name)
+] (hello-struct) var
+
+[
+    [(greeting) (
+        (Hello, ) self (name) property
+        concat ( !!!) concat print
+    )]
+
+    [(rename) (
+        (new-name) var
+        self (name) new-name modify 
+    )]
+] (hello-methods) var
+
+hello-struct hello-methods
+[(world)] instance (hello) var
+
+hello (greeting) method
+(梶塚太智) hello (rename) method (hello) var
+hello (greeting) method
