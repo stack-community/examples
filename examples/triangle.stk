@@ -3,11 +3,7 @@
 (Enter the angle: ) input (angle) var
 (Enter the base : ) input (base) var 
 
-# 角度をラジアンに変換#
 angle radian eval (angle-radians) var
-
-# 高さを計算#
 base angle-radians tan mul (height) var
 
-# 結果を表示#
 (Height: ) height round concat print
