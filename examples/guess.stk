@@ -1,20 +1,18 @@
-(数あてゲーム ～ 1から10000まで)　print
+(Guess number game - form 1 to 10000)　print
 1 10001 1 range rand (answer) var
 0 (i) var 
 
-(
-    i 1 add (i) var
-    i (回目のチャレンジ) concat print (> ) input (guess) var 
+1 26 1 range (i) (
+    i ( time challenge) concat print (> ) input (guess) var 
     (
-        (正解!おめでとうございます) concat print
+        (Correct!) concat print
         0 exit
     ) (
-        ((大き過ぎ!) print)
-        ((小さ過ぎ!) print)
+        ((Too big!) print)
+        ((Too small!) print)
         answer guess less answer
         guess equal not and if
     ) 
     guess answer equal if
-)
-(i 25 less) while
-(時間切れ。正解は)　answer concat (でした) concat print
+) for
+(Time up. true answer is ) answer concat print
