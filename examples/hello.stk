@@ -1,9 +1,7 @@
-[
-    (hello)
-    (name)
-] (hello-struct) var
+[(hello)
+    
+    [(name)]
 
-[
     [(greeting) (
         (Hello, ) self (name) property
         concat ( !!!) concat print
@@ -13,11 +11,19 @@
         (new-name) var
         self (name) new-name modify 
     )]
-] (hello-methods) var
+] (hello-class) var
 
-hello-struct hello-methods
-[(world)] instance (hello) var
+hello-class [(梶塚太智)] 
+instance (hello1) var
 
-hello (greeting) method
-(梶塚太智) hello (rename) method (hello) var
-hello (greeting) method
+hello-class [(佐藤蓮)] 
+instance (hello2) var
+
+hello1 (greeting) method
+hello2 (greeting) method
+
+(Ren Sato) hello2 (rename) method (hello2) var
+(Kajizuka Taichi) hello1 (rename) method (hello1) var
+
+hello1 (greeting) method
+hello2 (greeting) method
