@@ -29,4 +29,8 @@
 	[(tomorrow) (
 		self day self day property 1 add modify
 	)]
+
+	[(yesterday) (
+		self day self day property 1 add modify
+	)]
 ] (date-class) var
