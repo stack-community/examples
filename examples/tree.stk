@@ -13,9 +13,4 @@
     ) for
 ) tree var
 
-((Directory path is wrong.) print 0 exit) ()
-args-cmd 2 get (path) var
-((Please enter directory path) print 0 exit) ()
-path error:index-out-range equal if 
-path copy print cd error:cd equal if
 1 tree eval
