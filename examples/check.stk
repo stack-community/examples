@@ -1,0 +1,4 @@
+(Computer environment check) print
+(your computer name is ) host-name sys-info concat (.) concat print
+(You are using OS   is ) os-type sys-info concat (.) concat print
+(your cpu has ) cpu-num sys-info concat ( core.) concat print
