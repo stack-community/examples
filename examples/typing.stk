@@ -1,0 +1,22 @@
+[
+    [
+        (Ruby)
+        (puts "Hello, world!")
+    ]
+
+    [
+        (Python)
+        (print("Hello, world!"))
+    ]
+
+    [
+        (Stack)
+        ((Hello, world!) print)
+    ]
+
+] shuffle (i) (
+    (print the "Hello, world!" in )
+    i 0 get concat print 
+    (Correct!) (No!) 
+    (> ) input i 1 get equal if print
+) for
