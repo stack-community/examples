@@ -14,9 +14,33 @@
         ((Hello, world!) print)
     ]
 
+    [
+        (C)
+        (printf("Hello, world!");)
+    ]
+
+    [
+        (Rust)
+        (println!("Hello, world!");)
+    ]
+
+    [
+        (Java)
+        (System.out.println("Hello, world!");)
+    ]
+
+    [
+        (Visual Basic)
+        (Console.WriteLine("Hello, world!"))
+    ]
 ] shuffle (i) (
     (print the "Hello, world!" in )
     i 0 get concat print 
-    (Correct!) (No!) 
+    (
+       (Correct!) print
+    ) (
+        (No. true answer is) print
+        (| ) i 1 get concat print
+    ) 
     (> ) input i 1 get equal if print
 ) for
