@@ -1,0 +1,13 @@
+2 sleep 
+(Stack Linux 0.1.37 Beta) print 2 sleep
+(Built on Stack technology) print
+3 sleep
+
+() print (login: ) input (name) var
+(Welcome) print 3 sleep
+() print
+
+(
+    [name host-name sys-info] (@) join (:~$ ) concat
+    input eval print
+) true while
