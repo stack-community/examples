@@ -4,3 +4,4 @@
 (cpu has ) cpu-num sys-info concat ( core.) concat print
 (cpu speed is ) cpu-speed sys-info concat (.) concat print
 (memory size is ) mem-size sys-info concat (KB.) concat print
+(memory used rate is ) mem-used sys-info mem-size sys-info div 100 mul round concat (%.) concat print
