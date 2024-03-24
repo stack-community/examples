@@ -1,4 +1,4 @@
-..\\librarymath.stk read-file eval
+..\\library\\math.stk read-file eval
 
 [
     [0 0 0 0 0 0 0 0 0 0]
