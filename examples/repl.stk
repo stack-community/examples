@@ -3,10 +3,10 @@ ls (i) (
     i read-file eval
 ) for
 
-(Stack Programming Language REPL) print (
+(Stack Programming Language REPL) print (\n) print (
     () (prog) var (##) (in) var (
         (> ) input (in) var
         prog in ( ) concat concat (prog) var
     ) (in () equal not) while 
-    prog eval copy print
+    prog eval copy print (\n) print
 ) true while

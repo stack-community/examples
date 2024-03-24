@@ -7,9 +7,9 @@
 	date impl
 	[2024 3 18]
 	instance (date) var
-	date show method print
+	date show method print (\n) print
 	date tomorrow method (date) var 
-	date show method print 
+	date show method print (\n) print 
 	```
 	#
 

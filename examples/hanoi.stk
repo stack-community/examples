@@ -22,15 +22,15 @@
 
         (
             tower1 tower2 disk eval copy 0 get 1 get (tower2) var (tower1) var
-            (from tower1 to tower2) print 
+            (from tower1 to tower2) print (\n) print 
         ) (
             (
                 tower1 tower3 disk eval copy 0 get 1 get (tower3) var (tower1) var 
-                (from tower1 to tower3) print
+                (from tower1 to tower3) print (\n) print
             ) (
                 (
                     tower2 tower3 disk eval copy 0 get 1 get (tower3) var (tower2) var 
-                    (from tower2 to tower3) print
+                    (from tower2 to tower3) print (\n) print
                 ) () move 3 mod 0 equal if    
             ) move 3 mod 2 equal if
         ) move 3 mod 1 equal if

@@ -2,13 +2,13 @@
     (indent) var
     ls sort (i) (
         (
-            (|  ) indent 1 sub repeat (+-- ) i concat concat print
+            (|  ) indent 1 sub repeat (+-- ) i concat concat print (\n) print
             i cd
             indent 1 add tree eval
             indent 1 sub (indent) var
             (..) cd
         ) (
-            (|  ) indent 1 sub repeat (|-- ) i concat concat print
+            (|  ) indent 1 sub repeat (|-- ) i concat concat print (\n) print
         ) i folder if
     ) for
 ) tree var

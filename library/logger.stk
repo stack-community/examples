@@ -9,7 +9,7 @@
     (msg) var
     ([INFO] msg)
     (msg) msg replace
-    copy print 
+    copy print (\n) print 
     log-list swap append
     (log-list) var
     (msg) free
@@ -19,7 +19,7 @@
     (msg) var
     ([!WARNING!] msg)
     (msg) msg replace
-    copy print 
+    copy print (\n) print 
     log-list swap append
     (log-list) var
     (msg) free

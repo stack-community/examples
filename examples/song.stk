@@ -1,4 +1,4 @@
-(..\library\music.stk) read-file eval 
+(..\\library\\music.stk) read-file eval 
 
 (
 

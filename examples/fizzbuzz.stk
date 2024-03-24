@@ -7,4 +7,4 @@
         i 3 mod 0 equal if
     ) 
     i 15 mod 0 equal if
-) map ( ) join print
+) map ( ) join print (\n) print

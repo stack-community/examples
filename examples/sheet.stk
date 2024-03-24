@@ -1,4 +1,4 @@
-..\library\math.stk read-file eval
+..\\librarymath.stk read-file eval
 
 [
     [0 0 0 0 0 0 0 0 0 0]
@@ -13,18 +13,18 @@
     [0 0 0 0 0 0 0 0 0 0]
 ] (sheet) var
 
-(Sheet) print (
+(Sheet) print (\n) print (
     (> ) input (prompt) var
     (
        (Row: ) input eval (row) var
        (Col: ) input eval (col) var
-       (Value: ) sheet row get col get concat print
+       (Value: ) sheet row get col get concat print (\n) print
     ) (
         (
-            (-) 61 repeat print
+            (-) 61 repeat print (\n) print
             sheet (i) (
-                (|  ) i (  |  ) join concat (  |) concat print
-                (-) 61 repeat print
+                (|  ) i (  |  ) join concat (  |) concat print (\n) print
+                (-) 61 repeat print (\n) print
             ) for
         ) (
             (
@@ -53,12 +53,12 @@
                                 (Row: ) input eval (row) var
                                 (Col: ) input eval (col) var
                                 (Design: ) input  eval (design) var
-                                (Data Graph) print
+                                (Data Graph) print (\n) print
                                 sheet row get col get (i) (
-                                    (| ) design i repeat concat print
+                                    (| ) design i repeat concat print (\n) print
                                 ) for    
                             ) (
-                                prompt eval print
+                                prompt eval print (\n) print
                             ) prompt (graph) equal if
                         ) prompt (save) equal if
                     ) prompt (open) equal if
