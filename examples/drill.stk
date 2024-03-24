@@ -1,17 +1,17 @@
-(Multiplation Drills) print
+(Multiplation Drills) print (\n) print
 0 (score) var
 1 11 1 range (i) (
     0 10 1 range rand (num1) var
     0 10 1 range rand (num2) var
 
     ( 
-        score 10 add (score) var (Correct! ) print
+        score 10 add (score) var (Correct! ) print (\n) print
         (
             493.25 0.5 play-sound 
             445.43 0.3 play-sound 
         ) thread  
     ) (
-        (No. true answer is ) num1 num2 mul concat print 
+        (No. true answer is ) num1 num2 mul concat print (\n) print 
         (
             280.63 0.2 play-sound
             265.63 0.8 play-sound
@@ -20,4 +20,4 @@
     (Question) i (: ) concat concat num1 concat ( x ) concat num2 concat ( = ) concat
     input num1 num2 mul equal if 
 ) for 
-(Result: ) score concat (.pts) concat print
+(Result: ) score concat (.pts) concat print (\n) print
