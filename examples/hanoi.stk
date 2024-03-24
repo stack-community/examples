@@ -1,0 +1,60 @@
+(
+    (n) var
+
+    [] (tower1) var
+    [] (tower2) var
+    [] (tower3) var
+
+    0 n 1 range reverse (i) (
+        tower1 i append (tower1) var
+    ) for
+
+    (
+        tower1 (temp) var
+        tower2 (tower1) var
+        temp (tower2) var
+    ) ()
+    n 2 mod 0 equal if
+    
+    2 n pow 1 sub (total-moves) var
+
+    1 total-moves 1 add 1 range (move) (
+
+        (
+            tower1 tower2 disk eval copy 0 get 1 get (tower2) var (tower1) var
+            (from tower1 to tower2) print 
+        ) (
+            (
+                tower1 tower3 disk eval copy 0 get 1 get (tower3) var (tower1) var 
+                (from tower1 to tower3) print
+            ) (
+                (
+                    tower2 tower3 disk eval copy 0 get 1 get (tower3) var (tower2) var 
+                    (from tower2 to tower3) print
+                ) () move 3 mod 0 equal if    
+            ) move 3 mod 2 equal if
+        ) move 3 mod 1 equal if
+
+    ) for
+
+) (hanoi) var
+
+(
+    (destination) var (origin) var
+    (
+        origin copy len 1 sub get (disk) var
+        origin copy len 1 sub del (origin) var
+
+        destination disk append (destination) var
+    ) () 
+        origin len 0 equal not 
+            destination len 0 equal
+                origin copy len 1 sub get 
+                destination copy len 1 sub get
+            less 
+        or 
+    and if
+    [origin destination]
+) (disk) var
+
+(hanoi: ) input hanoi eval
