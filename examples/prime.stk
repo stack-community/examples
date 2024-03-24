@@ -1,24 +1,24 @@
-(..\library\math.stk) read-file eval
+(..\\library\\math.stk) read-file eval
 
-(Prime number judgement program) print 
+(Prime number judgement program) print (\n) print
 (
     (> ) input (target) var
     
     (
-        (exiting...) print 
+        (exiting...) print (\n) print 
         0 exit
     ) (
         (
             now-time (start) var ( 
-                target ( is a prime number（time: ) concat time concat ( second）)
-                concat print 
+                target ( is a prime number \(time: ) concat time concat ( second\))
+                concat print (\n) print 
             ) (
-                target ( is not a prime number（time: )  concat time concat ( secound）)
-                concat print
+                target ( is not a prime number \(time: )  concat time concat ( secound\))
+                concat print (\n) print
             )
             target prime? eval now-time start sub (time) var if  
         ) (
-            (Please enter the number.) print
+            (Please enter the number.) print (\n) print
         ) 
         target only-number if
     )
