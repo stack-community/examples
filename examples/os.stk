@@ -1,9 +1,10 @@
-(Stack Linux 0.1.37 Beta) print (\n) print
-(Built on Stack technology) print (\n) print
+cls (\n) 15 repeat print
+( ) 60 repeat print (Stack OS) print (\n) print () input
 
-() print (\n) print (login: ) input (name) var
-(Welcome) print (\n) print 3 sleep
-() print (\n) print
+cls (\n) 15 repeat print
+( ) 60 repeat print (login: ) input (name) var (\n) print
+( ) 57 repeat print (Welcome to ) host-name sys-info concat print (\n) print () input
+print cls
 
 (
     [name host-name sys-info] (@) join (:~$ ) concat
