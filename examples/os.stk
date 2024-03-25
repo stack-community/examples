@@ -8,5 +8,5 @@ print cls
 
 (
     [name host-name sys-info] (@) join (:~$ ) concat
-    input eval print (\n) print
+    input eval copy print (\n\n) print
 ) true while
