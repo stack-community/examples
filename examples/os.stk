@@ -1,5 +1,12 @@
 cls (\n) 15 repeat print
-( ) 60 repeat print (Stack OS) print (\n) print () input
+( ) 60 repeat print (Stack OS) print (\n) print 2 sleep
+
+0 105 5 range (i) (
+    cls (\n) 15 repeat print ( ) 60 repeat print 
+    (Stack OS) print (\n) print (\n) print ( ) 58 repeat print 
+    (Loading... ) i concat (%) concat print (\n) print
+    0.2 sleep
+) for
 
 cls (\n) 15 repeat print
 ( ) 60 repeat print (login: ) input (name) var (\n) print
