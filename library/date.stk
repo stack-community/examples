@@ -1,4 +1,4 @@
-[
+[(date)
 	# 
 	The date management object.
 	
@@ -13,7 +13,6 @@
 	```
 	#
 
-	[(date)]
 	[(year)]
 	[(month)]
 	[(day)]	
@@ -23,7 +22,7 @@
 			self year property
 			self month property
 			self day property
-		] (/ ) join
+		] (/) join
 	)]
 
 	[(tomorrow) (
@@ -31,6 +30,6 @@
 	)]
 
 	[(yesterday) (
-		self day self day property 1 add modify
+		self day self day property 1 sub modify
 	)]
 ] (date-class) var
