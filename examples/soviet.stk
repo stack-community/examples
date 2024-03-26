@@ -8,7 +8,7 @@
     token 0 del (token) var
     token copy len 1 sub del (token) var
 
-    [object token ( ) join subject] ( ) join 
+    [object token ( ) join subject upper case] ( ) join 
     (In Soviet Russia, ) swap concat ( !!!) concat
 
 ) (soviet) var
