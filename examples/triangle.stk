@@ -1,4 +1,4 @@
-..\\librarymath.stk read-file eval
+../librarymath.stk read-file eval
 
 (Enter the angle: ) input (angle) var
 (Enter the base : ) input (base) var 
