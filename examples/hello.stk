@@ -13,17 +13,17 @@
     )]
 ] (hello-class) var
 
-hello-class [(梶塚太智)] 
+hello-class [(world)] 
 instance (hello1) var
 
-hello-class [(佐藤蓮)] 
+hello-class [(Stack)] 
 instance (hello2) var
 
 hello1 (greeting) method
 hello2 (greeting) method
 
-(Ren Sato) hello2 (rename) method (hello2) var
-(Kajizuka Taichi) hello1 (rename) method (hello1) var
+(everyone) hello2 (rename) method (hello2) var
+(hackers) hello1 (rename) method (hello1) var
 
 hello1 (greeting) method
 hello2 (greeting) method
