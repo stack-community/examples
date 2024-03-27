@@ -1,4 +1,4 @@
-(..\library) cd
+(../library) cd
 ls (i) (
     i read-file eval
 ) for
