@@ -1,0 +1,6 @@
+() (buffer) var 
+
+(
+    buffer print (\n) (-) 40 repeat eval concat (\n) concat print
+    (Command: ) input eval print () input cls
+) (true) while
