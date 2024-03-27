@@ -17,3 +17,19 @@
     return eval
 ) 
 (match) var
+
+( 
+    (text) var
+    text (\\{.*\\}) regex (place) var
+
+    place (i) (
+        i 0 del copy len 1 sub del () join (i) var
+        i eval
+    ) map (value) var
+    
+    0 place len 1 range (i) (
+        text place i get value i get replace (text) var
+    ) for
+    text
+) 
+(format) var
