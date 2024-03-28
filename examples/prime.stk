@@ -1,8 +1,10 @@
 (../library/math.stk) read-file eval
 
+cls (Prime number judgement program) print (\n) print
+(> ) input (target) var
+
 (
     cls (Prime number judgement program) print (\n) print
-    (> ) input (target) var
     
     (
         (exiting...) print (\n) print 
@@ -23,6 +25,6 @@
         target only-number if
     )
     target (exit) regex if
-    () input
+    (> ) input (target) var
 ) 
 (true) while
