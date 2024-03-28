@@ -1,4 +1,4 @@
-(../library) cd
+(../library) cd pop
 ls (i) (
     i read-file eval
 ) for
