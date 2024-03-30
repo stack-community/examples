@@ -58,9 +58,8 @@
     2 (i) var
     true (flag) var
     
-    (   (false (flag) var)
-        (true (flag) var)
-        number 2 less if
+    (   (false) (true)
+        number 2 less if (flag) var
     ) (
         (false (flag) var) 
         (
