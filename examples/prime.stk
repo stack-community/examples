@@ -15,7 +15,7 @@ cls (Prime number judgement program) print (\n) print
                 target ( is a prime number \(time: ) concat time concat ( second\))
                 concat print (\n) print 
             ) (
-                target ( is not a prime number \(time: )  concat time concat ( secound\))
+                target ( is not a prime number \(time: )  concat time concat ( second\))
                 concat print (\n) print
             )
             target prime? eval now-time start sub (time) var if  
