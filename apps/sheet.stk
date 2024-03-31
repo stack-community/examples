@@ -1,25 +1,31 @@
-../library/math.stk read-file eval
+(../library/math.stk) read-file eval
+(../library/macro.stk) read-file eval
 
 [
-    [0 (copy ) 20 repeat eval]
-    (copy ) 12 repeat eval
+    [0 (copy ) 10 repeat eval]
+    (copy ) 10 repeat eval
 ] (sheet) var
 
 (
+    cls
+    
     (Sheet) print (\n) print
-    (-) 130 repeat print (\n) print
+    (-) 67 repeat print (\n) print
     sheet (i) (
         (|  ) i (  |  ) join concat (  |) concat print (\n) print
-        (-) 130 repeat print (\n) print
+        (-) 67 repeat print (\n) print
     ) for
 
     (> ) input (prompt) var
-    (
-       (Row: ) input eval (row) var
-       (Col: ) input eval (col) var
-       (Value: ) sheet row get col get concat print (\n) print
-    ) (
-        (
+
+    prompt [
+        [(get) (
+            (Row: ) input eval (row) var
+            (Col: ) input eval (col) var
+            (Value: ) sheet row get col get concat print (\n) print
+        )]
+
+        [(set) (
             (Row: ) input eval (row) var
             (Col: ) input eval (col) var
             (Data: ) input eval (val) var
@@ -27,35 +33,34 @@
             sheet row 
                 sheet row get col val set 
             set  (sheet) var
-        ) (
-            (
-                0 exit
-            ) (
-                (
-                    (File path: ) input eval
-                    read-file eval
-                    (sheet) var
-                ) (
-                    (
-                        sheet
-                        (File path: ) input
-                        write-file
-                    ) (
-                        (
-                            (Row: ) input eval (row) var
-                            (Col: ) input eval (col) var
-                            (Design: ) input  eval (design) var
-                            (Data Graph) print (\n) print
-                            sheet row get col get (i) (
-                                (| ) design i repeat concat print (\n) print
-                            ) for    
-                        ) (
-                            prompt eval print (\n) print
-                        ) prompt (graph) equal if
-                    ) prompt (save) equal if
-                ) prompt (open) equal if
-            ) prompt (exit) equal if
-        ) prompt (set) equal if
-    ) prompt (get) equal if
-    clear
+        )]
+
+        [(exit) (
+            0 exit
+        )]
+
+        [(open) (
+            (File path: ) input eval
+            read-file eval
+            (sheet) var
+        )]
+
+        [(save) (
+            sheet
+            (File path: ) input
+            write-file
+        )]
+
+        [(graph) (
+            (Row: ) input eval (row) var
+            (Col: ) input eval (col) var
+            (Design: ) input  eval (design) var
+            (Data Graph) print (\n) print
+            sheet row get col get (i) (
+                (| ) design i repeat concat print (\n) print
+            ) for    
+        )]
+
+    ] () match eval
+
 ) (true) while
