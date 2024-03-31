@@ -10,7 +10,6 @@
     (num) var
     num (-) () replace
     (number) cast
-    (num) free 
 ) (abs) var
 
 ( # Solve sum of list #
@@ -18,9 +17,6 @@
     array (i) (
         i total add (total) var
     ) for total
-    (array) free
-    (total) free
-    (i) free
 ) (sum) var
 
 
@@ -32,13 +28,12 @@
     (array2) var
     array2 sum eval 
     array2 len div
-    (array2) free
 ) (average) var
 
 ( # Solve cumulate #
     (max) var (count) var
-       (count copy 1 add max cumulate eval add)
-       (count) count max less if
+    (count copy 1 add max cumulate eval add)
+    (count) count max less if
 ) (cumulate) var
 
 ( # Solve max in list #
@@ -48,9 +43,6 @@
         (i (temp) var) ()
         temp i less if
     ) for temp
-    (array) free
-    (temp) free
-    (i) free
 ) (max) var
 
 (　# Judgement is it prime number #
@@ -75,8 +67,5 @@
         ) number 2 mod 0 equal number 3 mod 0 equal or if
     ) number 4 less if
     flag
-    (flag) free
-    (number) free
-    (i) free
 )
 (prime?) var
