@@ -19,7 +19,6 @@
     ) for total
 ) (sum) var
 
-
 ( # Solve radian form angle #
     pi mul 180 div 
 )　(radian) var
@@ -30,13 +29,13 @@
     array2 len div
 ) (average) var
 
-( # Solve cumulate #
+( # Solve cumulate value from the range #
     (max) var (count) var
     (count copy 1 add max cumulate eval add)
     (count) count max less if
 ) (cumulate) var
 
-( # Solve max in list #
+( # Solve max value in list #
     (array) var
     array 0 get (temp) var
     array (i) (
@@ -44,6 +43,15 @@
         temp i less if
     ) for temp
 ) (max) var
+
+( # Solve max value in list #
+    (array) var
+    array 0 get (temp) var
+    array (i) (
+        (i (temp) var) ()
+        i temp less if
+    ) for temp
+) (min) var
 
 (　# Judgement is it prime number #
     (number) var
