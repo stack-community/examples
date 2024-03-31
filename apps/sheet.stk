@@ -9,7 +9,7 @@
 (
     cls
     
-    (Sheet) print (\n) print
+    (Sheet - Spreadsheet Software) print (\n) print
     (-) 67 repeat print (\n) print
     sheet (i) (
         (|  ) i (  |  ) join concat (  |) concat print (\n) print
