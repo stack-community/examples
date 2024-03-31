@@ -1,3 +1,5 @@
+(../library/list.stk) read-file eval
+
 (
     (default) var
     (patern) var
@@ -6,7 +8,7 @@
     default (return) var
     patern (i) (
         (i 1 get (return) var) ()
-        i 0 get eval value equal if
+        i 0 get value equal if
     ) for
 
     return eval
@@ -22,8 +24,8 @@
         i eval
     ) map (value) var
     
-    0 place len 1 range (i) (
-        text place i get value i get replace (text) var
+    place value zip eval (i) (
+        text i 0 get i 1 get replace (text) var
     ) for
     text
 ) 
