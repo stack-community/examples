@@ -1,0 +1,7 @@
+(../library/tools.stk) read-file eval
+
+(Reading out text apps) print (\n) print (
+    (Please enter the text > ) input 
+    (Please enter speaker id > ) input 
+    speak eval
+) (true) while
