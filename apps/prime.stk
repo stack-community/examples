@@ -1,10 +1,10 @@
 (../library/math.stk) read-file eval
 
-cls (Prime number judgement program) print (\n) print
+cls (Prime number judgement apps) print (\n) print
 (> ) input (target) var
 
 (
-    cls (Prime number judgement program) print (\n) print
+    cls (Prime number judgement apps) print (\n) print
     
     (
         (exiting...) print (\n) print 
