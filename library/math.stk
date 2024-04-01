@@ -77,3 +77,9 @@
     flag
 )
 (prime?) var
+
+( # Split the number #
+    (num) var
+    1 num 1 range rand (r) var
+    [r num r sub] 
+) (split-number) var
