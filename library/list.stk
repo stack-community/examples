@@ -1,6 +1,6 @@
 (../library/math.stk) read-file eval
 
-( 
+( # Zip the two list element #
     (b) var 
     (a) var
     
@@ -10,3 +10,11 @@
     ) map
 
 ) (zip) var
+
+( # Just the string length #
+    (num) var (string) var
+    (string) (( ) num length sub repeat string concat)
+    
+    string (string) cast len (length) var 
+    num length less if
+) (just) var
