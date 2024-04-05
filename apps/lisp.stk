@@ -13,7 +13,5 @@
     ) map (command) layer concat eval append ( ) join eval 
 ) (exec) var
 
-[(print) [(concat) 
-    ((result is )) [(mul) 
-        [(input) ((I will double the enter number> ))] 2]]]
+[(print) [(add) 5 [(mul) 3 2]]]
 1 exec eval
