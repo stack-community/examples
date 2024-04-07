@@ -7,11 +7,11 @@
 
     (argument) layer concat eval (i) (
         (
-            i layer 1 add exec eval
+            i layer 1 add lisp eval
             layer 1 sub (layer) var
         ) (i) i type (list) equal if
     ) map (command) layer concat eval append ( ) join eval 
-) (exec) var
+) (lisp) var
 
 [(print) [(add) 5 [(mul) 3 2]]]
-1 exec eval
+1 lisp eval
