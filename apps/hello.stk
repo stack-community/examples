@@ -4,7 +4,7 @@
 
     [(greeting) (
         (Hello, ) self (name) property
-        concat ( !!!) concat print (\n) print
+        concat ( !!!) concat println
     )]
 
     [(rename) (

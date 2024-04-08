@@ -1,26 +1,26 @@
 (../library/math.stk) read-file eval
 
-cls (Prime number judgement apps) print (\n) print
+cls (Prime number judgement apps) println
 (> ) input (target) var
 
 (
-    cls (Prime number judgement apps) print (\n) print
+    cls (Prime number judgement apps) println
     
     (
-        (exiting...) print (\n) print 
+        (exiting...) println 
         0 exit
     ) (
         (
             now-time (start) var ( 
                 target ( is a prime number \(time: ) concat time concat ( second\))
-                concat print (\n) print 
+                concat println 
             ) (
                 target ( is not a prime number \(time: )  concat time concat ( second\))
-                concat print (\n) print
+                concat println
             )
             target prime? eval now-time start sub (time) var if  
         ) (
-            (Please enter the number.) print (\n) print
+            (Please enter the number.) println
         ) 
         target ([0-9]) regex () join (target) var target if
     )

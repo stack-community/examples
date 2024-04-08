@@ -1,9 +1,9 @@
 (../library/macro.stk) read-file eval
 
-(Computer environment check) print (\n) print
-(computer name is "{host-name sys-info}".) format eval print (\n) print
-(operating system is {os-type sys-info}.) format eval print (\n) print
-(cpu has {cpu-num sys-info} core.) format eval print (\n) print
-(cpu speed is {cpu-speed sys-info}.) format eval print (\n) print
-(memory size is {mem-size sys-info} KB.) format eval print (\n) print
-(memory used rate is {mem-used sys-info mem-size sys-info div 100 mul}%.) format eval print (\n) print
+(Computer environment check) println
+(computer name is "{host-name sys-info}".) format eval println
+(operating system is {os-type sys-info}.) format eval println
+(cpu has {cpu-num sys-info} core.) format eval println
+(cpu speed is {cpu-speed sys-info}.) format eval println
+(memory size is {mem-size sys-info} KB.) format eval println
+(memory used rate is {mem-used sys-info mem-size sys-info div 100 mul}%.) format eval println

@@ -1,8 +1,8 @@
-(Stack Script Security) print (\n) print
+(Stack Script Security) println
 (Enter file path you want to scan> ) 
 input (name) var name read-file (code) var
 
 (
-    (Found unsafe code can break fike system.) print (\n) print
-) ((This script is safety.) print (\n) print)
+    (Found unsafe code can break fike system.) println
+) ((This script is safety.) println)
 code (rm) regex if

@@ -35,12 +35,12 @@
     ]
 ] shuffle (i) (
     (print the "Hello, world!" in )
-    i 0 get concat print (\n) print 
+    i 0 get concat println 
     (
        (Correct!) print (\r) print
     ) (
         (No. true answer is) print (\r) print
-        (| ) i 1 get concat print (\n) print
+        (| ) i 1 get concat println
     ) 
-    (> ) input i 1 get equal if print (\n) print
+    (> ) input i 1 get equal if println
 ) for

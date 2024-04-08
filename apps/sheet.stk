@@ -9,11 +9,11 @@
 (
     cls
     
-    (Sheet - spreadsheet apps) print (\n) print
-    (-) 67 repeat print (\n) print
+    (Sheet - spreadsheet apps) println
+    (-) 67 repeat println
     sheet (i) (
-        (|  ) i (  |  ) join concat (  |) concat print (\n) print
-        (-) 67 repeat print (\n) print
+        (|  ) i (  |  ) join concat (  |) concat println
+        (-) 67 repeat println
     ) for
 
     (> ) input (prompt) var
@@ -22,7 +22,7 @@
         [(get) (
             (Row: ) input eval (row) var
             (Col: ) input eval (col) var
-            (Value: ) sheet row get col get concat print (\n) print
+            (Value: ) sheet row get col get concat println
         )]
 
         [(set) (
@@ -55,9 +55,9 @@
             (Row: ) input eval (row) var
             (Col: ) input eval (col) var
             (Design: ) input  eval (design) var
-            (Data Graph) print (\n) print
+            (Data Graph) println
             sheet row get col get (i) (
-                (| ) design i repeat concat print (\n) print
+                (| ) design i repeat concat println
             ) for    
         )]
 

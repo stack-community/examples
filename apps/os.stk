@@ -1,16 +1,16 @@
 cls (\n) 15 repeat print
-( ) 60 repeat print (Stack OS) print (\n) print 2 sleep
+( ) 60 repeat print (Stack OS) println 2 sleep
 
 0 105 5 range (i) (
     cls (\n) 15 repeat print ( ) 60 repeat print 
-    (Stack OS) print (\n) print (\n) print ( ) 58 repeat print 
-    (Loading... ) i concat (%) concat print (\n) print
+    (Stack OS) println (\n) print ( ) 58 repeat print 
+    (Loading... ) i concat (%) concat println
     0.2 sleep
 ) for
 
 cls (\n) 15 repeat print
 ( ) 60 repeat print (login: ) input (name) var (\n) print
-( ) 57 repeat print (Welcome to ) host-name sys-info concat print (\n) print () input
+( ) 57 repeat print (Welcome to ) host-name sys-info concat println () input
 print cls
 
 (

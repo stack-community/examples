@@ -6,4 +6,4 @@
 angle radian eval (angle-radians) var
 base angle-radians tan mul (height) var
 
-(Height: ) height round concat print (\n) print
+(Height: ) height round concat println

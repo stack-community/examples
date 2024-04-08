@@ -1,18 +1,18 @@
-(Guess number game - form 1 to 10000)　print (\n) print
+(Guess number game - form 1 to 10000)　println
 1 10001 1 range rand (answer) var
 0 (i) var 
 
 1 26 1 range (i) (
-    i ( time challenge) concat print (\n) print (> ) input (guess) var 
+    i ( time challenge) concat println (> ) input (guess) var 
     (
-        (Correct!) concat print (\n) print
+        (Correct!) concat println
         0 exit
     ) (
-        ((Too big!) print (\n) print)
-        ((Too small!) print (\n) print)
+        ((Too big!) println)
+        ((Too small!) println)
         answer guess less answer
         guess equal not and if
     ) 
     guess answer equal if
 ) for
-(Time up. true answer is ) answer concat print (\n) print
+(Time up. true answer is ) answer concat println
