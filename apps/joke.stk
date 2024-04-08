@@ -1,0 +1,6 @@
+(
+    ( ) 1 120 1 range rand repeat print
+    (私は誰ですか？) println
+
+    0.04 sleep
+) true while
