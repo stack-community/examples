@@ -27,4 +27,4 @@
 
 ) (hanoi) var
 
-(a) (b) (c) (> ) input (number) cast hanoi eval
+(a) (b) (c) (> ) input hanoi eval
