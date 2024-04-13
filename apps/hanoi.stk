@@ -13,7 +13,7 @@
         n 1 sub hanoi eval
         n 1 add (n) var
 
-        (from) n concat eval ( -> ) (to)  n concat eval concat concat println
+        (from) n concat eval ( -> ) (to) n concat eval concat concat println
 
         (via) n concat eval
         (to) n concat eval
@@ -22,7 +22,7 @@
         n 1 sub hanoi eval
         n 1 add (n) var
     ) (
-        (from)  n concat eval ( -> ) (to)  n concat eval concat concat println
+        (from) n concat eval ( -> ) (to) n concat eval concat concat println
     ) 1 n less if
 
 ) (hanoi) var
