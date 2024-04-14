@@ -13,7 +13,7 @@ cls (Prime number judgement apps) println
         (
             now-time (start) var ( 
                 target ( is a prime number \(time: ) concat time concat ( second\))
-                concat println 
+                concat println target set-clipboard
             ) (
                 target ( is not a prime number \(time: )  concat time concat ( second\))
                 concat println
