@@ -1,5 +1,4 @@
 (../library/macro.stk) read-file eval
-(../library/list.stk) read-file eval
 
 1 10 1 range (count1) (
     1 10 1 range (count2) (

@@ -8,5 +8,5 @@ ls (i) (
         (> ) input (in) var
         prog in ( ) concat concat (prog) var
     ) (in () equal not) while 
-    prog eval copy println
+    prog eval get-stack (Stack〔 ) swap ( | ) join concat ( 〕) concat println
 ) true while

@@ -4,7 +4,7 @@
     # Delete verbose spaces #
     code ([\s\t\n\r]+) regex (i) (
         code i ( ) replace (code) var
-    ) for
+    ) for (Deleted verbose spaces.) println
 
     (
         # Loading dependence files #
@@ -12,16 +12,16 @@
             code i () replace (code) var
             i ( read-file eval) () replace
             (\() () replace (\)) () replace 
-            copy (loading ) swap concat println
+            copy (Loading ) swap concat println
             read-file ( ) code concat concat (code) var
         ) for
-        (packing is done.) println
+        (The packing is done.) println
         code pack eval
     ) (
         # Create pack file #
         (# This file was created by stkpack # ) code concat 
         name (.stk) () replace (.pack.stk) concat (name) var name write-file
-        (All of pack processing was completed!\nCreated ) name concat println
+        (All of the packing is completed!\nCreated pack file at ./) name concat println
     ) 
     code (.* read-file eval) regex len 0 equal not if
 ) (pack) var

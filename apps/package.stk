@@ -1,3 +1,4 @@
-(Please enter install library package > ) input 
-copy (https://stack-community.github.io/library/) 
+(Welcome to Stack package manager !!!) println
+(Please enter library package you want to install) println
+(> ) input copy (https://stack-community.github.io/library/) 
 swap concat request swap write-file
