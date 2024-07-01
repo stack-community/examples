@@ -1,8 +1,31 @@
-[無政府　自由 リベラル　人種　民族　国家　超人　穏健　立憲　愛国　社会　資本　市場　理性　感情　官僚　エリート　民衆　開発　人民　権威　反権威　平等　公平　共産　個人　平和　世界市民　集団　剛田　ジャイアン　共和　神秘　プラトン　ストア派　犬儒学派　マルクス　快楽　功利　保守　革新　グローバル　ロマン　実存　民主] (ideas) var
-(思想強めなチノちゃんAI： ) print ideas len 2 pow パターン concat println
-ideas rand (annex) var
+[
+    無政府　自由 リベラル　
+    人種　民族　国家　超人
+    穏健　立憲　愛国　社会　
+    資本　市場　理性　感情
+    官僚　エリート　民衆　
+    開発　人民　権威　反権威　
+    平等　公平　共産　個人　
+    平和　世界市民　集団　
+    剛田　ジャイアン　共和
+    神秘　プラトン　ストア派
+    犬儒学派　マルクス　快楽
+    エピクロス派　ピタゴラス学派
+    功利　保守　革新　グローバル
+    ロマン　実存　民主
+] (ideas) var
+
+(思想強めなチノちゃんAI： ) print ideas len 3 pow パターン concat println
+
+ideas rand (annex1) var
+ideas rand (annex2) var
 ideas rand (base) var
-(base) (annex base concat) 
-annex base equal if
-(チノちゃん「)　swap concat (主義を提唱します！」) concat 
+
+(annex1) (annex1 annex2 concat) 
+annex1 annex2 equal if
+
+() (base concat)
+annex1 base equal annex2 base equal or if
+
+concat (チノちゃん「)　swap concat (主義を提唱します！」) concat 
 copy set-clipboard println
