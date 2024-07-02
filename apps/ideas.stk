@@ -27,5 +27,5 @@ annex1 annex2 equal if
 () (base concat)
 annex1 base equal annex2 base equal or if
 
-concat (チノちゃん「)　swap concat (主義を提唱します！」) concat 
-copy set-clipboard println
+(チノちゃん「)　swap concat (主義を提唱します！」) concat 
+set-clipboard println
